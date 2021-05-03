@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CityTech</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .container {
+                color:black;
+                background-color:#add8e6;
+                max-width:540px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form >
+            <div class="container my-3 pt-3">
+                <h2 style="text-align:center">Register Here!!!</h2>
+                <div class="form group my-3 was-validated">
+                   <div class="row">
+                       <div class="col">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control" placeholder="enter your first name" name="fname" id="fname" required>
+                       </div>
+                       <div class="col">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control" placeholder="enter your last name" name="lname" id="lname" required>
+                       </div>
+                   </div>
+                </div>
+                <div class="form-group my-3 was-validated">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control w-50" placeholder="enter your email" name="email" id="email" required="required">
+                </div>
+                <div class="form-group my-3 was-validated">
+                    <label for="mobile">Mobile No:</label>
+                    <input type="tel" class="form-control w-50" name="mobile" id="mobile" required="required">
+                </div>
+                <div class="form group my-3">
+                    <label for="DOB">Date Of Birth:</label>
+                    <input type="date" class="form-control w-50" id="DOB" name="DOB">
+                </div> 
+                <div class="radio my-3">
+                    <label for="gender">Gender:</label><br>
+                    <label><input type="radio" name="gender" checked>Male</label>
+                    <label><input type="radio" name="gender" >Female</label>
+                    <label><input type="radio" name="gender" >Others</label>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option>Nepal</option>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Bhutan</option>
+                        <option>Korea</option>
+                        <option>Japan</option>
+                        <option>Sri Lanka</option>
+                        <option>Maldives</option>
+                        <option>Thailand</option>
+                    </select>
+                </div>
+                <div class="form-group my-3">
+                    <label>Skills:</label><br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="javaFlexCheckDefault">
+                      <label class="form-check-label" for="javaFlexCheckDefault">Java</label>
+                    </div>
+                    <div class="form-chek form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="javaScriptFlexCheckDefault">
+                      <label class="form-check-label" for="javaScriptFlexCheckDefault">JavaScript</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="pythonFlexCheckDefault">
+                      <label class="form-check-label" for="pythonFlexCheckDefault">Python</label>
+                    </div>
+                    <div class="form-chek form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="cppFlexCheckDefault">
+                      <label class="form-check-label" for="cppFlexCheckDefault">C++</label>
+                    </div>
+                    <div class="form-chek form-check-inline my-3">
+                        <label for="othr">Others:</label>
+                    <textarea class="form-chek form-check-inline" id="othr" rows="2"></textarea>
+                    </div>
+
+                <div class="form-group my-3">
+                    <label for="adr">Address:</label>
+                    <textarea class="form-control w-50 " id="adr" rows="2"></textarea>
+                </div> 
+                <div class="form-group was-validated">
+                    <div class="custom-file">
+                        <label class="custom-file-label" for="customfile" >Upload your photo</label>
+                        <input type="file" class="custom-file-input" id="customfile"/>
+                    </div>
+                </div>
+                <div class="form-group my-3 pb-3 text-center">
+                        <button type="submit" class="btn btn-success">Register</button>
+                </div>
+            </div>
+
+        </form>
+    </body>
+</html>
